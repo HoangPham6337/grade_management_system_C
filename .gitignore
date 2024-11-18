@@ -1,0 +1,2 @@
+# Ignore the dependencies files
+obj/*.d
