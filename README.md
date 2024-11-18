@@ -19,26 +19,22 @@ This repository hosts the source code for a GPA Management Program written in C.
     - Handles failures gracefully, with error messages for allocation or file operation issues.
 
 # How It Works
-**Initialization:**
+- **Initialization:**
     - On startup, the program attempts to load existing course data from data.dat.
     - If no data is found, a new course list is initialized with a default targeted GPA.
-
-**Interactive User Interface:**
+- **Interactive User Interface:**
     - The UILoop function handles the program's menu-driven workflow, allowing users to select and execute various operations.
-
-**Core Functionalities:**
+- **Core Functionalities:**
     - Add new courses dynamically with marks and credits.
     - View all course details, including GPA and total ECTS credits.
     - Edit course details or delete specific courses by name.
     - Predict the required GPA to achieve a targeted GPA.
     - Change the targeted GPA based on user goals.
     - Optionally delete all course data.
-
-**Cleanup and Data Persistence:**
+- **Cleanup and Data Persistence:**
     - Before exiting, the program saves the updated course list back to data.dat unless explicitly deleted.
     - Frees dynamically allocated memory to ensure efficient resource usage.
-
-**File Structure:**
+- **File Structure:**
     - `bin/`: Contains compiled binaries for the program.
     - `data.dat`: Stores serialized course and GPA data for persistence.
     - `lib/`: Includes reusable libraries for modular code organization.
